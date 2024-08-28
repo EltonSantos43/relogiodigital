@@ -34,9 +34,11 @@ body {
     justify-content: center;
     color: #d6d4c8;
     background: rgba(0, 0, 0, .9);
-    box-shadow: 5px, 5px, 15px rgba(0, 0, 0, .7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 7px;
     letter-spacing: 3px;
+    margin-bottom: 0;
+    /* Removido para evitar espaço extra */
 }
 
 .relogio span {
@@ -53,12 +55,15 @@ body {
     .relogio {
         flex-direction: column;
         height: auto;
+        width: auto;
+        /* Ajusta a largura para caber melhor em telas menores */
     }
 
     .relogio div {
         height: 120px;
         width: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        /* Reduzido para diminuir o espaço extra */
     }
 
     .relogio span {
@@ -74,6 +79,8 @@ body {
     .relogio div {
         height: 100px;
         width: 80px;
+        margin-bottom: 5px;
+        /* Mantido baixo para telas ainda menores */
     }
 
     .relogio span {
